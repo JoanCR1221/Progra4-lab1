@@ -29,8 +29,9 @@ function App() {
         </button>
      </section>
 
-<Login />
+
 <SaludoJoan />
+<SaludoPablo/>
 
 <div className="ticks"></div>
 
