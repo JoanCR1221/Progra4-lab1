@@ -5,9 +5,9 @@ export default function Login(){
     const [name, setName]=useState('Pablo')
 
     return (
-        <section className="Hello">
-            <h2 className="Hello__title"> Hello,{name}!</h2>
-            <p className ="Hello__extra">
+        <section className="Helloo">
+            <h2 className="Helloo__title"> Hello,{name}!</h2>
+            <p className ="Helloo__extra">
                 Bienvenido
             </p>
         </section>
