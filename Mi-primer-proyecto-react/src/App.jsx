@@ -27,12 +27,12 @@ function App() {
         >
           Count is {count}
         </button>
-      </section>
+     </section>
 
-      <SaludoAlex />
-      <SaludoJoan />
+<Login />
+<SaludoJoan />
 
-      <div className="ticks"></div>
+<div className="ticks"></div>
 
       <section id="next-steps">
         <div id="docs">
