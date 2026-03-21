@@ -1,7 +1,7 @@
 import { useState } from "react";   
-import "./SaludoJoan.css";
+import "./SaludosJoan.css";
 
-export default function SaludoJoan() {
+export default function SaludosJoan() {
     const [name, setNombre] = useState("Joan");
 
     return (

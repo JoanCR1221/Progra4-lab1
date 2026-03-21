@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import SaludoJoan from './Components/SaludosJoan';
+import Saludopablo from './Components1/SaludoPablo';
 import './App.css'
 
 function App() {
@@ -29,9 +31,8 @@ function App() {
         </button>
      </section>
 
-
-<SaludoJoan />
-<SaludoPablo/>
+  <SaludoJoan />
+  <Saludopablo />
 
 <div className="ticks"></div>
 
