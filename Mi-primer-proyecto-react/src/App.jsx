@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import SaludoJoan from './Components/SaludosJoan';
 import Saludopablo from './Components1/SaludoPablo';
+import SaludoEmmanuel from './Components2/SaludoEmmanuel';
 import './App.css'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 
   <SaludoJoan />
   <Saludopablo />
+  <SaludoEmmanuel />
 
 <div className="ticks"></div>
 

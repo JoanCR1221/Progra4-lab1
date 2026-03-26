@@ -1,0 +1,36 @@
+/* SaludoEmmanuel.css */
+
+/* Contenedor principal: estilo tipo tarjeta */
+.saludo-emmanuel {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por la tarjeta */
+.saludo-emmanuel:hover {
+    transform: translateY(-5px);
+}
+
+/* Título principal */
+.saludos_title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* Texto secundario */
+.saludos_extra {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+    line-height: 1.5;
+}
