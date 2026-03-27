@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import SaludoJoan from './Components/SaludosJoan';
 import SaludoPablo from './Components1/SaludoPablo';
 import BuscarPokemon from './Components1/BuscarPokemon';
+import Saludopablo from './Components1/SaludoPablo';
 import './App.css'
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
 <SaludoJoan />
 <SaludoPablo/>
 <BuscarPokemon />
+  <SaludoJoan />
+  <Saludopablo />
 
 <div className="ticks"></div>
 

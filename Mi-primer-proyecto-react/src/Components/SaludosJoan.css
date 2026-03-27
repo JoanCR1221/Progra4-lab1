@@ -1,7 +1,7 @@
 /* SaludoJoan.css */
 
 /* Contenedor principal: estilo tipo tarjeta */
-.saludo-joan {
+.saludos-joan {
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
@@ -15,7 +15,7 @@
 }
 
 /* Efecto al pasar el mouse por la tarjeta */
-.saludo-joan:hover {
+.saludos-joan:hover {
     transform: translateY(-5px);
 }
 
