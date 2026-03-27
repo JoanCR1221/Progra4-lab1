@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import SaludoJoan from './Components/SaludosJoan';
+import SaludoPablo from './Components1/SaludoPablo';
+import BuscarPokemon from './Components1/BuscarPokemon';
 import './App.css'
 
 function App() {
@@ -32,6 +35,7 @@ function App() {
 
 <SaludoJoan />
 <SaludoPablo/>
+<BuscarPokemon />
 
 <div className="ticks"></div>
 
