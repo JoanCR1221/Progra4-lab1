@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import SaludoJoan from './Components/SaludosJoan';
+import SaludoPablo from './Components1/SaludoPablo';
+import BuscarPokemon from './Components1/BuscarPokemon';
 import Saludopablo from './Components1/SaludoPablo';
 import './App.css'
 
@@ -31,6 +33,10 @@ function App() {
         </button>
      </section>
 
+
+<SaludoJoan />
+<SaludoPablo/>
+<BuscarPokemon />
   <SaludoJoan />
   <Saludopablo />
 
