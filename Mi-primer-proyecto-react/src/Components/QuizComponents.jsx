@@ -61,7 +61,7 @@ export default function QuizComponents() {
       {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
 
       <div style={{ textAlign: "center", padding: "20px" }}>
-        <h3>Pregunta {indiceActual + 1} de {preguntas.length}</h3>
+        <h3>Son {preguntas.length} preguntas</h3>
         <h2>{preguntaActual?.question}</h2>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxWidth: "400px", margin: "20px auto" }}>
