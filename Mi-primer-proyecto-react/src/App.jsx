@@ -1,5 +1,5 @@
 import SaludoJoan from './Components/SaludosJoan';
-
+import BuscandoPokemon from './Components/BuscandoPokemon';
 import QuizComponents from './Components/QuizComponents';
 import './App.css'
 
@@ -13,6 +13,7 @@ function App() {
         <SaludoJoan />
 
         <QuizComponents />
+        <BuscandoPokemon />
 
      </section>
 
