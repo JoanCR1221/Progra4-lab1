@@ -12,7 +12,8 @@ export default function QuizComponents() {
     const fetchQuiz = async () => {
       const config = {
         headers: {
-          "X-Master-Key": "$2a$10$BFH5/CRqs4mdYHXc86S1vujcG9rttHUTSwC8Y3pNYLrWSRpU6FBbq"
+          "X-Master-Key": import.meta.env.VITE_JSONBIN_MASTER_KEY
+          
         }
       };
 
