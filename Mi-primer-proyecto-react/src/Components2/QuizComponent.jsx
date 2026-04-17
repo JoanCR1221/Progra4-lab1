@@ -67,7 +67,10 @@ export default function Quiz() {
   useEffect(() => {
     const fetchQuiz = async () => {
       const headers = new Headers();
-      headers.append("X-Master-Key", "$2a$10$oNI2V67yduBBrw3zZ3s8P.VNAOOQ7aKbxmrrOkXFxtgkZKqJ05yTS");
+      headers.append(
+        "X-Master-Key",
+        "$2a$10$oNI2V67yduBBrw3zZ3s8P.VNAOOQ7aKbxmrrOkXFxtgkZKqJ05yTS"
+      );
 
       try {
         const response = await fetch(
