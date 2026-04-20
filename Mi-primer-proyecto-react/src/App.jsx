@@ -33,6 +33,7 @@ function App() {
 
   <SaludoJoan />
   <Saludopablo />
+  
 
 <div className="ticks"></div>
 

@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
-// 1. IMPORTAR LA BANDERA (Asegúrate de que el archivo exista en src/assets/)
+
 import flag from "../assets/flag.png";
 
 export default function Quiz() {
   const [preguntas, setQuestions] = useState([]);
   const [showConfetti, setShowConfetti] = useState(false);
   
-  // Rastrear el índice de la pregunta (0, 1, 2...)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  // Rastrear qué respuesta tocó el usuario para pintar el color
   const [respuestaSeleccionada, setRespuestaSeleccionada] = useState(null);
-  // Bloquear clics mientras se muestra el resultado
   const [bloqueado, setBloqueado] = useState(false);
 
   const handleAnswerClick = (index) => {
@@ -25,21 +22,19 @@ export default function Quiz() {
     if (esCorrecta) {
       setShowConfetti(true);
       
-      // Esperamos 3 segundos para que vea el verde y el confetti, luego siguiente
       setTimeout(() => {
         setShowConfetti(false);
         setRespuestaSeleccionada(null);
         setBloqueado(false);
         
         if (currentQuestionIndex < preguntas.length - 1) {
-          setCurrentQuestionIndex(prev => prev + 1); // 🔥 ESTO AVANZA EL CONTADOR
+          setCurrentQuestionIndex(prev => prev + 1); 
         } else {
           alert("¡Felicidades, completaste el Quiz!");
-          setCurrentQuestionIndex(0); // Reiniciar al final
+          setCurrentQuestionIndex(0); 
         }
       }, 3000);
     } else {
-      // Si es incorrecta, mostramos el rojo 1.5 segundos y permitimos reintentar
       setTimeout(() => {
         setRespuestaSeleccionada(null);
         setBloqueado(false);
@@ -50,7 +45,6 @@ export default function Quiz() {
   useEffect(() => {
     const fetchQuiz = async () => {
       const headers = new Headers();
-      // Usar variable de entorno de Vite (.env)
       const apiKey = import.meta.env.VITE_JSONBIN_MASTER_KEY;
       
       if (apiKey) {
@@ -87,7 +81,6 @@ export default function Quiz() {
           Quiz de Costa Rica
         </h1>
         
-        {/* 3. CONTADOR DINÁMICO (Esto hará que diga 1, 2, 3... conforme avanzas) */}
         <h3 style={{ color: "#555" }}>
           Pregunta {currentQuestionIndex + 1} de {preguntas.length}
         </h3>
@@ -99,7 +92,6 @@ export default function Quiz() {
         <div style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
           {preguntaActual?.answers.map((option, index) => {
             
-            // LÓGICA DE COLORES DINÁMICA
             let colorBoton = "#f0f0f0"; // gris por defecto
             let colorTexto = "black";
             
