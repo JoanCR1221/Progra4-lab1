@@ -71,7 +71,7 @@ export default function Quiz() {
       {showConfetti && <Confetti />}
       <div style={{ textAlign: "center", padding: "20px", fontFamily: "Arial, sans-serif" }}>
         
-        {/* 2. USAR LA BANDERA EN EL TÍTULO */}
+       
         <h1 style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px" }}>
           <img 
             src={flag} 
@@ -92,12 +92,12 @@ export default function Quiz() {
         <div style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
           {preguntaActual?.answers.map((option, index) => {
             
-            let colorBoton = "#f0f0f0"; // gris por defecto
+            let colorBoton = "#f0f0f0"; 
             let colorTexto = "black";
             
             if (respuestaSeleccionada === index) {
               const esCorrecta = index === preguntaActual.correctAnswer;
-              colorBoton = esCorrecta ? "#28a745" : "#dc3545"; // Verde o Rojo
+              colorBoton = esCorrecta ? "#28a745" : "#dc3545"; 
               colorTexto = "white";
             }
 
