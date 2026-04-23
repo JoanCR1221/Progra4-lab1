@@ -78,7 +78,7 @@ export default function Quiz() {
             alt="Bandera de Costa Rica" 
             style={{ width: "50px", height: "auto", borderRadius: "4px", boxShadow: "0 2px 4px rgba(0,0,0,0.2)" }} 
           />
-          Quiz de Costa Rica
+          Quiz CR
         </h1>
         
         <h3 style={{ color: "#555" }}>
