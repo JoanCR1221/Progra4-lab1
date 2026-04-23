@@ -45,10 +45,10 @@ export default function Quiz() {
   useEffect(() => {
     const fetchQuiz = async () => {
       const headers = new Headers();
-      const apiKey = import.meta.env.VITE_JSONBIN_MASTER_KEY;
+      const apiKey = import.meta.env.VITE_JSONBIN_ACCESS_KEY;
       
       if (apiKey) {
-        headers.append("X-Master-Key", apiKey);
+        headers.append("X-Access-Key", apiKey);
       }
 
       try {
